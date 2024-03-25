@@ -1,5 +1,6 @@
 class User < ApplicationRecord
   has_many :posts
+  has_many :comments
 
   PASSWORD_FORMAT ||= /\A
     (?=.{14,30})              # Must contain 14 or up to 30 characters
